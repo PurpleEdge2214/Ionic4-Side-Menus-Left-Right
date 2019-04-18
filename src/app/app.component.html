@@ -29,7 +29,7 @@
       </ion-header>
       <ion-content>
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of adminPages">
+          <ion-menu-toggle menu="admin" auto-hide="false" *ngFor="let p of adminPages"> <!--Must specify menu, otherwise will toggle menu above-->
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
